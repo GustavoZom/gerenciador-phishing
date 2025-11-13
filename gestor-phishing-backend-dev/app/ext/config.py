@@ -5,11 +5,13 @@ from dynaconf import FlaskDynaconf
 def init_app(app):
     FlaskDynaconf(app)
 
+    # CORS para desenvolvimento - permite todas as origens
     CORS(app, resources={
         r"/api/*": {
-            "origins": ["http://localhost:3000", "http://127.0.0.1:3000"],
+            "origins": "*",  # Permite todas as origens
             "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
-            "allow_headers": ["Content-Type", "Authorization"]
+            "allow_headers": ["Content-Type", "Authorization", "X-Requested-With"],
+            "supports_credentials": True
         }
     })
 
