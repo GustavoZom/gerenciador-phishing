@@ -1,0 +1,33 @@
+.groupListContainer{
+  gap: 30px;
+}
+
+.groupHeader,
+.groupCard{
+  display: grid;
+  grid-template-columns: 60px 1.8fr 1.2fr 1fr 100px;
+  align-items: center;
+  font-size: 60%;
+  color: #313131;
+  background-color: #FFFF;
+  border-radius: 10px;
+  font-weight: 300;
+  margin: 3px;
+  padding: 12px 20px;
+}
+
+.groupHeader{
+  font-weight: 600;
+}
+
+
+.groupCard :nth-child(3){
+  border: 1px solid #26BAB3;
+  color: #26BAB3;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  justify-self: start;
+  align-self: center;
+}
