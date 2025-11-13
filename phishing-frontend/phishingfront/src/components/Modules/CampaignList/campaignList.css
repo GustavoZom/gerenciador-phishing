@@ -1,0 +1,29 @@
+.cardHeader,
+.campaignCard{
+  display: grid;
+  grid-template-columns: 60px 1.8fr 1.2fr 1fr 100px;
+  align-items: center;
+  font-size: 60%;
+  color: #313131;
+  padding: 12px 20px;
+}
+
+.cardHeader{
+  font-weight: 600;
+}
+
+.campaignCard{
+  font-weight: 300;
+  margin: 3px;
+}
+
+.campaignCard :nth-child(5){
+  border: 1px solid #26BAB3;
+  color: #26BAB3;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  white-space: nowrap;
+  justify-self: start;
+  align-self: center;
+}

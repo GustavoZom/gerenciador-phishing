@@ -1,0 +1,43 @@
+.sidenav{
+    max-width: 5%;
+    position: fixed;
+    height: 100%;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: end;
+    transition: background 0.2s, color 0.2s;
+}
+
+.icon{
+    color: #8C8C8C;
+    font-size: 28px;
+    width: 100%
+    
+}
+
+.icon:hover {
+  background-color: #FDC603;
+  cursor: pointer;
+}
+
+.topIcon{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.midIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: .2;
+    margin-top: 10vh;
+}
+
+.bottomIcon{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}

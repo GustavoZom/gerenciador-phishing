@@ -1,0 +1,99 @@
+.hSidenav {
+  width: 5%;
+  min-width: 80px;
+}
+
+
+.campanhaTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 10px 40px 10px 20px;
+  border-radius: 10px;
+  margin-top:50px;
+}
+
+.campanhaTitle span{
+  border: 1px solid #313131;
+  color: #313131;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cFilterContent{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #313131;
+  gap: 10px;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.filterContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  align-items: stretch;
+}
+
+.filterColumn input,
+.filterColumn select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.filterButtons {
+  grid-column: 5;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: strech;
+  height: 100%;
+}
+
+.filterButtons .btn-clear,
+.filterButtons .btn-search {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.filterButtons .btn-clear{
+  background-color: #B8B8B8;
+}
+
+.filterButtons .btn-search{
+  background-color: #489CFB;
+}
+
+.campaign{
+  color: #313131;
+}
+
+@media (max-width: 1024px) {
+  .filterContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .filterButtons {
+    grid-column: 1 / span 2;
+    grid-row: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
